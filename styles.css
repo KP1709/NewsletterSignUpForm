@@ -1,0 +1,206 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__img-mobile{
+    width: 100%;
+}
+
+.form{
+    margin: 0 1.25em;
+}
+
+.form__title{
+    margin-top: 0.5em;
+    font-size: 3rem;
+}
+
+.form__description{
+    margin-top: 0.9em;
+    font-weight: 400;
+}
+
+.form__list{
+    margin-top: 1em;
+    margin-left: 0em;
+}
+
+.form__list ul{
+    list-style: none;
+}
+
+.form__description, .form__list{
+    font-size: 1.25rem;
+}
+
+.form__item{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.form__item + .form__item{
+    margin-top: 0.5em;
+}
+
+.fa-circle-check{
+    font-size: 1.25rem;
+    color: #fc7363;
+}
+
+.form__registration{
+    margin-top: 2em;
+}
+
+.form__input-title{
+    margin-bottom: 0.75em;
+}
+
+.centre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form__input-text, .form__input-btn{
+    width: 95vw;
+    height: 3.75em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form__input-text{
+    border: 2px solid grey;
+    padding-left: 1em;
+}
+
+#form__input-error{
+    color: #ff0000;
+}
+
+.form__input-btn{
+    margin-top: 1em;
+    border: 2px solid transparent;
+    background-color: rgb(39, 39, 68);
+    color:rgb(253, 251, 249);
+    font-weight: 700;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#confirmation__check{
+    font-size: 6rem;
+    padding-top: 0.3em;
+}
+
+#email__bold{
+    font-weight: 700;
+}
+
+#dismiss-btn{
+    position: absolute;
+    bottom: 0em;
+    width: 90%;
+}
+
+@media (min-width: 970px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(39, 39, 68);
+
+    }
+
+    .container{
+        background-color: whitesmoke;
+        border-radius: 20px;
+        padding: 2em; 
+    }
+
+    .sign-up{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero__img-mobile{
+        width: 100%;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .form{
+        margin-top: 2em;
+    }
+
+    .form__description{
+        width: 90%;
+    }
+
+    #form__input-text, .form__input-btn{
+        width: 90%;
+        margin-right: auto;
+        height: 3.5em;
+        border-radius: 5px;
+        font-size: 1rem;
+    } 
+
+    .row{
+        width: 90%;
+    }
+
+    .form__registration>.row{
+        position: relative;
+    }
+
+    #form__input-error{
+        position: absolute;
+        right: 1em;
+    }
+
+    .confirmation{
+        width: 35.5%;
+        gap: 1em;
+    }
+
+    #confirmation__check{
+        font-size: 5.5rem;
+        padding-top: 0.1em;
+    }
+
+    #dismiss-btn{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #confirmation__message{
+        width: 100%;
+    }
+
+
+}

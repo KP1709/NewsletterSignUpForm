@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+
+</head>
+<body>
+    <section id="sign-up" class="container" style="display:flex;">
+        <div class="col">
+
+            <picture>
+                <source srcset="illustration-sign-up-mobile.svg" media="(max-width: 900px)">
+                <source srcset="illustration-sign-up-desktop.svg" media="(max-width: 1500px)">
+                <source srcset="illustration-sign-up-desktop.svg">
+                <img class="hero__img-mobile" src="illustration-sign-up-mobile.svg">
+            </picture>
+
+            <div class="form">
+                <h1 class="form__title">Stay Updated!</h1>
+                <h2 class="form__description">Join 60,000+ product managers receiving monthly updates on:</h2>
+
+                <div class="form__list">
+                    <ul>
+                        <li class="form__item"><i class="fa-solid fa-circle-check"></i>Product discovery and bulding what matters</li>
+                        <li class="form__item"><i class="fa-solid fa-circle-check"></i>Measuring to ensure updates are a success</li>
+                        <li class="form__item"><i class="fa-solid fa-circle-check"></i>And much more!</li>
+                    </ul>
+                </div>
+
+                <div class="form__registration">
+                    <div class="row">
+                        <legend class="form__input-title">Email Address</legend>
+                        <p id="form__input-error"></p>
+                    </div>
+                    <div class="centre">
+                        <form action="" method="get">
+                            <input id="form__input-text" name="email" placeholder="example@company.com">
+                            <button class="form__input-btn" type="button" onclick="validate()">Subscribe to monthly newsletter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="confirmation" class="container confirmation" style="display:none;">
+        <div class="form">
+            <i id="confirmation__check"class="fa-solid fa-circle-check"></i>
+            <h1 class="form__title">Thanks for subscribing!</h1>
+            <h2 id="confirmation__message" class="form__description"></h2>
+            <button id="dismiss-btn"class="form__input-btn">Dismiss Message</button>
+        </div>
+
+
+    </section>
+    
+</body>
+</html>
