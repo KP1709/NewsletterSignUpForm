@@ -3,8 +3,9 @@ function validate() {
     let emailInputBox = document.getElementById("form__input-text")
     let emailInputErrorMessage = document.getElementById("form__input-error")
 
-    let check = emailAddress.lastIndexOf("@");
+    let check = emailAddress.lastIndexOf("@"); //Check to see if character is in string
 
+    // -1 means the character doesn't exist so the input isn't a valid email
     if (check === -1) {
         emailInputBox.style.borderColor = "#FF0000";
         emailInputBox.style.color= "#FF0000";
