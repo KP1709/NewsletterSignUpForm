@@ -10,6 +10,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+input:focus{
+    outline: 4px solid rgba(117, 170, 255, 0.5);
+}
+
 .col{
     display: flex;
     flex-direction: column;
@@ -120,6 +124,8 @@ body{
     bottom: 0em;
     width: 90%;
 }
+
+#dismiss-btn:focus{outline: 4px solid rgba(117, 170, 255, 0.5);}
 
 @media (min-width: 950px){
     body{

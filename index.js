@@ -23,5 +23,8 @@ function validate() {
     
 }
 
+const dismissFocus = document.getElementById("dismiss-btn")
+dismissFocus.focus()
+
 
 
