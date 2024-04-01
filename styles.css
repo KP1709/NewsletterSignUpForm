@@ -122,7 +122,7 @@ body{
     width: 90%;
 }
 
-@media (min-width: 970px){
+@media (min-width: 950px){
     body{
         display: flex;
         align-items: center;
