@@ -130,6 +130,10 @@ body{
 
     }
 
+    #confirmation{
+        width: 30em;
+    }
+
     .container{
         background-color: whitesmoke;
         border-radius: 20px;
