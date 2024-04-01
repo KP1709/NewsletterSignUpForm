@@ -3,10 +3,13 @@ function validate() {
     let emailInputBox = document.getElementById("form__input-text")
     let emailInputErrorMessage = document.getElementById("form__input-error")
 
-    let check = emailAddress.lastIndexOf("@"); //Check to see if character is in string
+    // Regular expression - criteria for checking if email address entered is valid
+    const emailCheckPattern = /^(?!.*@\w.*@\w).*@\w/gm
 
-    // -1 means the character doesn't exist so the input isn't a valid email
-    if (check === -1) {
+    let check = emailCheckPattern.test(emailAddress); //Check email address against pattern
+    console.log(check)
+
+    if (check === false) {
         emailInputBox.style.borderColor = "#FF0000";
         emailInputBox.style.color= "#FF0000";
         emailInputBox.style.backgroundColor = ' #ffcccc'
