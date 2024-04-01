@@ -65,14 +65,13 @@ body{
     margin-top: 2em;
 }
 
-.form__input-title{
-    margin-bottom: 0.75em;
+#form__input-titles{
+    margin-bottom: 0.5em; 
+    justify-content: space-between;  
 }
 
-.centre{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.form__input-title:focus-within{
+    font-weight: bold;
 }
 
 #form__input-text, .form__input-btn{
@@ -162,7 +161,7 @@ body{
     }
 
     #form__input-text, .form__input-btn{
-        width: 90%;
+        width: 95%;
         margin-right: auto;
         height: 3.5em;
         border-radius: 5px;
@@ -179,7 +178,7 @@ body{
 
     #form__input-error{
         position: absolute;
-        right: 1em;
+        right: -1.5em;
     }
 
     .confirmation{
