@@ -4,7 +4,7 @@ function validate() {
     let emailInputErrorMessage = document.getElementById("form__input-error")
 
     // Regular expression - criteria for checking if email address entered is valid
-    const emailCheckPattern = /^(?!.*@\w.*@\w).*@\w/gm
+    const emailCheckPattern = /^(?!.*@\w.).*@\w/gm
 
     let check = emailCheckPattern.test(emailAddress); //Check email address against pattern
     console.log(check)
